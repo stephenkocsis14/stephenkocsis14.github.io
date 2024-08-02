@@ -58,6 +58,11 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+#hero h2,
+#hero p {
+    color: #000; /* Adjust color for visibility */
+}
+
 #hero h2 {
     font-size: 3em;
 }
@@ -80,6 +85,20 @@ section#about {
     background: #fff;
     padding: 60px 20px;
     text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 section#skills {

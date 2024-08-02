@@ -49,16 +49,29 @@ header nav ul li a:hover {
 }
 
 #hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
-    height: 100vh;
+    position: relative;
+    height: 80vh; /* Make the hero section slightly smaller */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .hero-content {
+    position: relative;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
     padding: 20px;
     border-radius: 10px;
@@ -101,8 +114,8 @@ section#about {
 
 .headshot {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Make the headshot larger */
+    height: 200px;
     object-fit: cover;
     margin-bottom: 20px;
 }
@@ -221,7 +234,7 @@ footer .social-links {
 }
 
 footer .social-links a {
-    color: #fff;
+    color: #fff !important; /* Force the color to white */
     text-decoration: none;
     margin: 0 10px;
     font-size: 2em; /* Increase the size of the icons */

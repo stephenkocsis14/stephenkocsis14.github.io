@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background: #f4f4f4;
 }
 
 header {
@@ -76,45 +77,106 @@ section .container {
 }
 
 section#about {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section#skills {
     background: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-section#skills ul {
-    list-style: none;
-    padding: 0;
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-section#skills ul li {
-    background: #ddd;
-    margin: 5px 0;
-    padding: 10px;
+.skill-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-section#projects .project,
-section#gallery .gallery-item {
+.skill-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+section#projects {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
     background: #f4f4f4;
-    margin: 10px 0;
-    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
 }
 
 section#gallery {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-section#gallery .gallery-item {
-    flex: 1 1 calc(33.333% - 20px);
+.gallery-item {
     margin: 10px;
+    width: calc(33.333% - 20px);
+    overflow: hidden;
 }
 
-section#gallery .gallery-item img {
-    max-width: 100%;
+.gallery-item img {
+    width: 100%;
     height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+section#contact {
+    background: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 section#contact form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 section#contact form label,
@@ -122,12 +184,15 @@ section#contact form input,
 section#contact form textarea,
 section#contact form button {
     margin: 5px 0;
+    width: 100%;
+    max-width: 600px;
 }
 
 section#contact form input,
 section#contact form textarea {
     padding: 10px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 section#contact form button {
@@ -136,6 +201,7 @@ section#contact form button {
     color: #fff;
     border: none;
     cursor: pointer;
+    width: auto;
 }
 
 footer {

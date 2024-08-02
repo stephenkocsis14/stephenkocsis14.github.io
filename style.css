@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3em;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section#about {
+    background: #f4f4f4;
+}
+
+section#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#skills ul li {
+    background: #ddd;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+section#projects .project,
+section#gallery .gallery-item {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+section#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#gallery .gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+}
+
+section#gallery .gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+section#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+section#contact form label,
+section#contact form input,
+section#contact form textarea,
+section#contact form button {
+    margin: 5px 0;
+}
+
+section#contact form input,
+section#contact form textarea {
+    padding: 10px;
+    width: 100%;
+}
+
+section#contact form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

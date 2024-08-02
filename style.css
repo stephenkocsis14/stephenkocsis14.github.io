@@ -224,7 +224,7 @@ footer .social-links a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 1.5em;
+    font-size: 2em; /* Increase the size of the icons */
     transition: color 0.3s;
 }
 

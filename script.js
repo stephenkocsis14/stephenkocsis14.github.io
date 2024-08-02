@@ -1,5 +1,3 @@
-// script.js (Optional)
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Form submitted!');
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
 });

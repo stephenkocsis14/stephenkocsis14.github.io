@@ -27,25 +27,30 @@ header h1 {
     margin: 0;
 }
 
-header nav ul {
+.nav-links {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-header nav ul li {
+.nav-links li {
     margin-left: 20px;
 }
 
-header nav ul li a {
+.nav-links li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-header nav ul li a:hover {
+.nav-links li a:hover {
     color: #ddd;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
 }
 
 #hero {
@@ -114,8 +119,8 @@ section#about {
 
 .headshot {
     border-radius: 50%;
-    width: 300px; /* Make the headshot larger */
-    height: 300px;
+    width: 200px; /* Make the headshot larger */
+    height: 200px;
     object-fit: cover;
     margin-bottom: 20px;
 }
@@ -243,4 +248,27 @@ footer .social-links a {
 
 footer .social-links a:hover {
     color: #ddd;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #333;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }

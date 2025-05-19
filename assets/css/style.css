@@ -141,12 +141,15 @@ body{
 }
 .banner-con::before {
     content: "";
-    background: url(../image/main-img.png) no-repeat top left;
+    background: url(../image/headshot.png) no-repeat center center;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 944px;
+    width: 600px; /* adjust to your preferred circle size */
+    height: 600px;
+    border-radius: 50%;
+    z-index: 0;
 }
 .banner-con,
 .service-sec,

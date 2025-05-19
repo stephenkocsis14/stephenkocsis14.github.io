@@ -142,11 +142,11 @@ body{
 .banner-con::before {
     content: "";
     background: url(../image/headshot.png) no-repeat center center;
-    background-size: contain;
+    background-size: cover;  /* this is key */
     position: absolute;
     top: 0;
     left: 0;
-    width: 600px; /* adjust to your preferred circle size */
+    width: 600px;
     height: 600px;
     border-radius: 50%;
     z-index: 0;

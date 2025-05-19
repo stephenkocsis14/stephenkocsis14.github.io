@@ -12,14 +12,6 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/* Style for the circular headshot image in the navbar */
-.navbar-brand img {
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 /**navbar con css**/
 .navbar-con {
     position: absolute;
@@ -150,7 +142,7 @@ body{
 }
 .banner-con::before {
     content: "";
-    background: url(../image/main-img.png) no-repeat top left;
+    background: url(../image/headshot.png) no-repeat top left;
     position: absolute;
     top: 0;
     left: 0;

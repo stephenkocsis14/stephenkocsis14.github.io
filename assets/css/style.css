@@ -141,14 +141,13 @@ body{
 }
 .banner-con::before {
     content: "";
-    background: url(../image/headshot.png) no-repeat center center;
-    background-size: cover;  /* this is key */
+    background: url(../image/headshot.png) no-repeat left center;
+    background-size: 944px; /* matches original */
     position: absolute;
     top: 0;
     left: 0;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
+    width: 100%;
+    height: 944px;
     z-index: 0;
 }
 .banner-con,

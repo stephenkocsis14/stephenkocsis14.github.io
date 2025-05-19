@@ -11,6 +11,15 @@ html{
 body{
     font-family: 'Josefin Sans', sans-serif;
 }
+
+/* Style for the circular headshot image in the navbar */
+.navbar-brand img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /**navbar con css**/
 .navbar-con {
     position: absolute;

@@ -1333,3 +1333,17 @@ body{
 #cslider .active .slider-text{
     display: table;
 }
+
+.banner-img-container {
+  position: absolute;
+  top: 120px;          /* adjust vertical padding */
+  left: 60px;          /* adjust horizontal padding */
+  z-index: 1;
+}
+
+.banner-headshot {
+  width: 260px;        /* your preferred width */
+  height: auto;
+  border-radius: 12px; /* optional: soft corners */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3); /* optional: polish */
+}

@@ -1326,3 +1326,16 @@ body{
 #cslider .active .slider-text{
     display: table;
 }
+
+.headshot-img {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    z-index: 2;
+}

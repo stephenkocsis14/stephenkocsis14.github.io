@@ -1,0 +1,42 @@
+:root {
+    --primary-color:#FFF;
+    --secondary-color:#202328;
+    --accent:#fd8742;
+    --text-color: #888888;
+}
+h1{
+    font-size: 100px;
+    line-height: 88px;
+    color: var(--primary-color);
+    font-weight: 700; 
+}
+h2{
+    font-size: 52px;
+    line-height: 55px;
+    font-weight: 700; 
+    color: var(--secondary-color);
+}
+h4{
+    font-size: 26px;
+    line-height: 55px;
+    font-weight: 700; 
+    color: var(--secondary-color);
+}
+h5{
+    color: var(--accent);
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+}
+p{
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+}
+.padding-top{
+    padding-top: 140px;
+}
+.padding-bottom{
+    padding-bottom: 140px;
+}

@@ -1333,3 +1333,11 @@ body{
 #cslider .active .slider-text{
     display: table;
 }
+
+.banner-con-btn::before {
+    display: none !important;
+}
+
+.banner-right-sec::before {
+    display: none !important;
+}

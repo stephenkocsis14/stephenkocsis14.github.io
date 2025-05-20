@@ -297,6 +297,13 @@ body{
 .service-title-sec h5{
     margin-bottom: 15px;
 }
+
+.service-box figure img {
+    width: 40px;        /* reduce image width */
+    height: auto;       /* maintain aspect ratio */
+    display: block;     
+    margin: 0 auto 20px; /* center the image and add space below */
+}
 /*****service section*****/
 /*****about section*****/
 .about-sec{
